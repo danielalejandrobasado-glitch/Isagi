@@ -1,7 +1,7 @@
 <h1 align="center">⚽ ISAGI-BOT-MD ⚽</h1>
 
 <p align="center">
-  <img src="https://files.catbox.moe/yqej4s.mp4" alt="Isagi Yoichi" width="600"/>
+  <img src="https:https://files.catbox.moe/yqej4s.mp4" alt="Isagi Yoichi" width="600"/>
 </p>
 
 ---
