@@ -1,7 +1,7 @@
-<h1 align="center">⚽ ISAGI-BOT-MD ⚽</h1>
+# ⚽ ISAGI-BOT-MD ⚽
 
 <p align="center">
-  <img src="https:https://files.catbox.moe/yqej4s.mp4" alt="Isagi Yoichi" width="600"/>
+  <img src="https://files.catbox.moe/yjyjgr.jpg" alt="Isagi Yoichi" width="600"/>
 </p>
 
 ---
@@ -31,6 +31,9 @@ ISAGI-BOT-MD es un bot de WhatsApp inspirado en **Blue Lock**, creado para dar c
 
 ---
 
-## 📸 Ejemplo
-```bash
-.menu
+## 📸 Video ejemplo
+<p align="center">
+  <a href="https://files.catbox.moe/yqej4s.mp4" target="_blank" rel="noopener noreferrer">
+    <img src="https://files.catbox.moe/yjyjgr.jpg" alt="Click para ver el video" width="600"/>
+  </a>
+</p>
