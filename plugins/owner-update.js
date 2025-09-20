@@ -1,7 +1,7 @@
 import { exec } from 'child_process';
 
 let handler = async (m, { conn }) => {
-  m.reply(`🌷 Actualizando la bot...`);
+  m.reply(`🏆 Actualizando el bot...`);
 
   const comando = 'find src -type f | xargs git update-index --assume-unchanged && git pull';
 
@@ -16,7 +16,7 @@ let handler = async (m, { conn }) => {
     }
 
     if (stdout.includes('Already up to date.')) {
-      conn.reply(m.chat, `🌷 La bot ya está actualizada.`, m);
+      conn.reply(m.chat, `🏆 El bot ya está actualizada.`, m);
     } else {
       conn.reply(m.chat, `🍭 Actualización realizada con éxito.\n\n${stdout}`, m);
     }
