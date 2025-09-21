@@ -11,16 +11,26 @@ export async function before(m, { conn, participants, groupMetadata }) {
   let img = await (await fetch(`${pp}`)).buffer()
 
     if (chat.welcome && m.messageStubType === WAMessageStubType.GROUP_PARTICIPANT_ADD) {
-      let bienvenida = `❀ *Bienvenido* a ${groupMetadata.subject}\n ✰ ${taguser}\n${global.welcom1}\n •(=^●ω●^=)• Disfruta tu estadía en el grupo!\n> ✐ Puedes usar *#help* para ver la lista de comandos.`
+      let bienvenida = `💙 ¡Bienvenido al campo de Blue Lock! 💙
+🔥 Aquí forjamos al mejor delantero del mundo 🔥
+⚽ ${taguser} acaba de unirse al equipo ⚽️
+🏆 Edita este mensaje con *setwelcome* 🏆
+\n> 📌 Puedes usar *#help* para ver la lista de comandos.`
       await conn.sendMessage(m.chat, { image: img, caption: bienvenida, mentions: [who] })
     }
        
     if (chat.welcome && m.messageStubType === WAMessageStubType.GROUP_PARTICIPANT_LEAVE) {
-      let bye = `❀ *Adiós* de ${groupMetadata.subject}\n ✰ ${taguser}\n${global.welcom2}\n •(=^●ω●^=)• Te esperamos pronto!\n> ✐ Puedes usar *#help* para ver la lista de comandos.`
+      let bye = `💫 ¡El partido terminó! Gracias por jugar con nosotros 🌟
+⚡ ${taguser} dejó el campo de Blue Lock ⚡
+🏆 Edita este mensaje con *setbye* 🏆
+\n> 📌 Puedes usar *#help* para ver la lista de comandos.`
       await conn.sendMessage(m.chat, { image: img, caption: bye, mentions: [who] })
     }
 
     if (chat.welcome && m.messageStubType === WAMessageStubType.GROUP_PARTICIPANT_REMOVE) { 
-      let kick = `❀ *Adiós* de ${groupMetadata.subject}\n ✰ ${taguser}\n${global.welcom2}\n •(=^●ω●^=)• Te esperamos pronto!\n> ✐ Puedes usar *#help* para ver la lista de comandos.`
+      let kick = `💫 ¡El partido terminó para ${taguser}! 🌟
+⚡ Fue expulsado del campo de Blue Lock ⚡
+🏆 Edita este mensaje con *setbye* 🏆
+\n> 📌 Puedes usar *#help* para ver la lista de comandos`
       await conn.sendMessage(m.chat, { image: img, caption: kick, mentions: [who] })
   }}
