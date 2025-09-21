@@ -61,11 +61,11 @@ return m.reply(`${emoji2} No se han encontrado espacios para *Sub-Bots* disponib
 }*/
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let id = `${who.split`@`[0]}`  //conn.getName(who)
-let pathEllenJadiBot = path.join(`./${jadi}/`, id)
+let pathisagiJadiBot = path.join(`./${jadi}/`, id)
 if (!fs.existsSync(pathEllenJadiBot)){
 fs.mkdirSync(pathEllenJadiBot, { recursive: true })
 }
-EllenJBOptions.pathEllenJadiBot = pathEllenJadiBot
+EllenJBOptions.pathisagiJadiBot = pathisagiJadiBot
 EllenJBOptions.m = m
 EllenJBOptions.conn = conn
 EllenJBOptions.args = args
@@ -80,7 +80,7 @@ handler.tags = ['serbot']
 handler.command = ['qr', 'code']
 export default handler 
 
-export async function EllenJadiBot(options) {
+export async function isagiJadiBot(options) {
 let { pathEllenJadiBot, m, conn, args, usedPrefix, command } = options
 if (command === 'code') {
 command = 'qr'; 
@@ -92,7 +92,7 @@ args[0] = args[0].replace(/^--code$|^code$/, "").trim()
 if (args[1]) args[1] = args[1].replace(/^--code$|^code$/, "").trim()
 if (args[0] == "") args[0] = undefined
 }
-const pathCreds = path.join(pathEllenJadiBot, "creds.json")
+const pathCreds = path.join(pathisagiJadiBot, "creds.json")
 if (!fs.existsSync(pathEllenJadiBot)){
 fs.mkdirSync(pathEllenJadiBot, { recursive: true })}
 try {
