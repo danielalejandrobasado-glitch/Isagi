@@ -31,7 +31,8 @@ const handler = async (m, { conn }) => {
       m.chat,
       outputPath,
       'comprimida.jpg',
-      `🎯 *¡Imagen comprimida!*\n✨ *Calidad optimizada con éxito*\n🔧 *by 🦈Ellen Joe Bot🦈*`,
+      `✅ ⚽ *Imagen comprimida con éxito*  
+Tu visión del campo ahora es más nítida, como la metavisión de Isagi. 👁️🔥`,
       m
     );
 
