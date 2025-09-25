@@ -39,8 +39,8 @@ global.languaje = 'Español'
 global.vs = '2.2.0'
 global.nameqr = 'ellen-joe-bot'
 global.namebot = 'ᯓ★ 𝑬𝒍𝒍𝒆𝒏 𝑱𝒐𝒆 𝑩𝒐𝒕 ִֶָ ࣪ ִֶָ🪽་༘࿐'
-global.Ellensessions = 'EllenSessions'
-global.jadi = 'EllenJadiBots'
+global.Ellensessions = 'Sessions'
+global.jadi = 'JadiBots'
 global.EllenJadibts = true
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
